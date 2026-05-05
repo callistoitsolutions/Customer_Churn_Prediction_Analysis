@@ -617,11 +617,9 @@ with tab2:
                         textfont_color='#e8eaf0',
                         hovertemplate='%{label}: %{value} (%{percent})<extra></extra>'
                     ))
-                    fig_d.update_layout(**plotly_dark_layout(),
-                                        title='Risk Distribution',
-                                        height=290,
-                                        margin=dict(t=40, b=10, l=10, r=10),
-                                        legend=dict(font_color='#e8eaf0'))
+                    fig_bx.update_layout(**plotly_dark_layout(), height=290,
+                                           margin=dict(t=40, b=10, l=10, r=10),
+                                           legend=dict(font=dict(color='#e8eaf0')))
                     st.plotly_chart(fig_d, use_container_width=True)
 
                 with r1c2:
