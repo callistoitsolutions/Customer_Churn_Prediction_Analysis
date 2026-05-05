@@ -805,4 +805,4 @@ with tab3:
             <li>Download results as <b style='color:#e8eaf0;'>Excel or CSV</b> for reporting</li>
         </ul>
     </div>
-    """, unsafe_allow_html=Tr
+    """, unsafe_allow_html=True)
