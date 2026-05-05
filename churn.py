@@ -289,8 +289,9 @@ def plotly_dark_layout():
         xaxis=dict(gridcolor='#2a2f3e', linecolor='#2a2f3e', tickfont_color='#a0a8c0'),
         yaxis=dict(gridcolor='#2a2f3e', linecolor='#2a2f3e', tickfont_color='#a0a8c0'),
         title_font_color='#e8eaf0',
-        legend=dict(font=dict(color='#e8eaf0')),
+        legend_font_color='#e8eaf0',
     )
+
 
 def risk_label(p):
     if p >= 0.70: return "🔴 High"
@@ -688,7 +689,7 @@ with tab2:
                                         title='Monthly Charges vs Churn')
                         fig_bx.update_layout(**plotly_dark_layout(), height=290,
                                               margin=dict(t=40, b=10, l=10, r=10),
-                                              legend=dict(font=dict(color='#e8eaf0')))
+                                              legend_font_color='#e8eaf0')
                         st.plotly_chart(fig_bx, use_container_width=True)
 
                 st.markdown("---")
