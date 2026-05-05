@@ -175,7 +175,7 @@ h1, h2, h3, h4, p, label, span { color: #e8eaf0; }
 # ─────────────────────────────────────────────
 # CONSTANTS & COLUMN MAPPING
 # ─────────────────────────────────────────────
-MODEL_PATH = "churn_model.pkl"
+MODEL_PATH = "churn_model_v2.pkl"
 
 CANONICAL_COLS = [
     'Gender', 'Age', 'Tenure_Months', 'ContractType',
