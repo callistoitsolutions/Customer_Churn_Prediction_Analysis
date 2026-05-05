@@ -289,7 +289,7 @@ def plotly_dark_layout():
         xaxis=dict(gridcolor='#2a2f3e', linecolor='#2a2f3e', tickfont_color='#a0a8c0'),
         yaxis=dict(gridcolor='#2a2f3e', linecolor='#2a2f3e', tickfont_color='#a0a8c0'),
         title_font_color='#e8eaf0',
-        legend_font_color='#e8eaf0',
+        legend=dict(font=dict(color='#e8eaf0')),
     )
 
 
