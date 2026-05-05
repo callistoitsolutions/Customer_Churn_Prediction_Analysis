@@ -12,6 +12,16 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 import joblib
 
+MODEL_PATH = "churn_model.pkl"
+
+if not os.path.exists(MODEL_PATH):
+    st.info("🔄 Training model for first time... please wait.")
+    from train_model import train_churn_model  # your training script
+    train_churn_model()
+    st.success("✅ Model ready!")
+    st.rerun()
+
+model = joblib.load(MODEL_PATH)
 # ============================================================
 # GENERATE SAMPLE TRAINING DATA
 # ============================================================
